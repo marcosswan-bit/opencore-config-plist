@@ -1,0 +1,38 @@
+{
+  "name": "opencore-config-plist-backend",
+  "version": "1.0.0",
+  "description": "Backend for OpenCore config.plist generator",
+  "main": "dist/server.js",
+  "scripts": {
+    "dev": "ts-node src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "lint": "eslint src/**/*.ts"
+  },
+  "keywords": [
+    "hackintosh",
+    "opencore",
+    "config.plist"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "plist": "^3.1.0",
+    "sqlite3": "^5.1.6",
+    "sqlite": "^5.0.1",
+    "express-validator": "^7.0.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "@types/node": "^18.15.11",
+    "@types/plist": "^3.0.2",
+    "typescript": "^5.0.2",
+    "ts-node": "^10.9.1",
+    "@typescript-eslint/eslint-plugin": "^5.59.0",
+    "@typescript-eslint/parser": "^5.59.0",
+    "eslint": "^8.40.0"
+  }
+}
